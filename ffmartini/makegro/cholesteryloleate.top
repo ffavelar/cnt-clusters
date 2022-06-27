@@ -1,0 +1,8 @@
+#include "martini_v2.1.itp"
+#include "cholesteryloleate.itp"
+
+[ system ]
+Cholesteryloleate (CO)
+
+[ molecules ]
+CO	1

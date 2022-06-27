@@ -1,0 +1,8 @@
+#include "martini_v2.1.itp"
+#include "palmytoyloleolylphosphatidylcoline.itp"
+
+[ system ]
+PALMITOYL OLEOYL PHOSPHATIDYLCOLINE (POPC)
+
+[ molecules ]
+POPC	1

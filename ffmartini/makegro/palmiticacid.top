@@ -1,0 +1,8 @@
+#include "martini_v2.1.itp"
+#include "palmiticacid.itp"
+
+[ system ]
+Palmitic Acid (PCA)
+
+[ molecules ]
+PCA	1

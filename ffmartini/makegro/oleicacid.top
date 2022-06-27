@@ -1,0 +1,8 @@
+#include "martini_v2.1.itp"
+#include "oleicacid.itp"
+
+[ system ]
+Oleic Acid (OCA)
+
+[ molecules ]
+OCA	1

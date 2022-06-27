@@ -1,0 +1,8 @@
+#include "martini_v2.2P.itp"
+#include "hydroxyectoine.itp"
+
+[ system ]
+Hydroxyectoine (HECT)
+
+[ molecules ]
+HECT	1

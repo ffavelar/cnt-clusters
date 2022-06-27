@@ -1,0 +1,8 @@
+#include "martini_v2.1.itp"
+#include "glycerinetrioleate.itp"
+
+[ system ]
+Glycerine Trioleate (TO)
+
+[ molecules ]
+TO	1
