@@ -1,0 +1,34 @@
+### man qsub !
+### join stdout and stderr
+#$ -j y
+### change to currend work dir
+#$ -cwd
+### send mail to
+#$ -M martin.voegele@biophys.mpg.de
+### send no email
+#$ -m n
+### request the parallel environment with 20 physical cores == 1 nodes
+#$ -pe impi_hydra 24
+### request 2 hours (==7200s) wallclock
+#$ -l h_rt=24:00:00
+
+
+## MODULES ##
+
+# load the impi module (-> mandatory)
+module load impi/4.1.3
+module load gromacs/4.6.7-plumed2.1
+module load vmd/1.9.1
+
+
+# Directory
+SIMDIR=VARDIR
+
+cd ../$SIMDIR/simulation
+			
+mpiexec -perhost 24 -n 1 printf "CNT\nCNT\n\n" | g_rdf -rdf mol_com -f martini_md.xtc -s martini_md.tpr -n index.ndx -xy -b 8000000 -o ../../analysis/rdf/rdf-$SIMDIR.xvg
+	
+cd ../..
+
+
+exit 0
